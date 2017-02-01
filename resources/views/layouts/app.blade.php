@@ -87,7 +87,7 @@
 
         <div class="footer-bar">
             <h1 class="text-center">
-                Live
+                {{ config('app.name') }}
             </h1>
             <h6 class="text-center">
                 @ abider
