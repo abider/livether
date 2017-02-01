@@ -1,27 +1,18 @@
-# Laravel PHP Framework
+![livether](http://oh6t02bhk.bkt.clouddn.com/macboog-retina-big.png)
+## Livether
+* Live Together，直播聚合，包括斗鱼、熊猫、全民等直播平台
+* 方便干净的简洁观看（只有直播，没有弹幕等干扰）
+* 直接进入原直播间观看直播
+* 关注直播间功能，个人中心包括关注列表（筛选在线）
+* 个人项目练手使用，无上线计划
 
-[![Build Status](https://travis-ci.org/laravel/framework.svg)](https://travis-ci.org/laravel/framework)
-[![Total Downloads](https://poser.pugx.org/laravel/framework/d/total.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/framework/v/stable.svg)](https://packagist.org/packages/laravel/framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/framework/v/unstable.svg)](https://packagist.org/packages/laravel/framework)
-[![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
+## 概述
+* PHP框架[ Laravel 5.3](https://laravel.com/docs/5.3)
+* Javascript框架 [Vue.js 2.0](https://vuejs.org/v2/guide/)
+* 本地开发环境使用 [Homestead](https://github.com/laravel/homestead) 进行开发
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as authentication, routing, sessions, queueing, and caching.
+## 计划任务
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. A superb inversion of control container, expressive migration system, and tightly integrated unit testing support give you the tools you need to build any application with which you are tasked.
-
-## Official Documentation
-
-Documentation for the framework can be found on the [Laravel website](http://laravel.com/docs).
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](http://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+此项目的计划任务以 Laravel 的 [任务调度](https://laravel.com/docs/5.3/scheduling) 方式执行。
+* 命令：`db:seed --class=RoomsTableSeeder`
+* 说明：每五分钟获取一次官方数据并填充数据库
