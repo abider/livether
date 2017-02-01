@@ -15,13 +15,10 @@
 
     <!-- Scripts -->
     <script>
-        window.Laravel = <?php echo json_encode([
+        window.Laravel = {!! json_encode([
             'csrfToken' => csrf_token(),
-            'apiToken' => Auth::check() ? Auth::user()->api_token : '',
-            'name' => Auth::check() ? Auth::user()->name : '',
-            'email' => Auth::check() ? Auth::user()->email : '',
-            'date' => Auth::check() ? date('Y-m-d H:m:s', strtotime(Auth::user()->created_at)) : ''
-        ]); ?>
+            'apiToken' => auth()->check() ? auth()->user()->api_token : ''
+        ]) !!}
     </script>
 </head>
 <body>

@@ -24,7 +24,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('db:seed --class=RoomsTableSeeder')->everyThirtyMinutes();
+        $schedule->command('db:seed --class=RoomsTableSeeder')->everyFiveMinutes();
     }
 
     /**
