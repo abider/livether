@@ -21,6 +21,8 @@ class RoomsController extends Controller
     public function show($id)
     {
         $room = $this->room->find($id);
+        $room->followed = ! auth()->check() ? 'false'
+                          : auth()->user()->followed($room->iid) ? 'true' : 'false';
 
         return view('show', compact('room'));
     }
