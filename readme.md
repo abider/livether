@@ -6,6 +6,10 @@
 * 关注直播间功能，个人中心包括关注列表（筛选在线）
 * 个人项目练手使用，无上线计划
 
+## Demo
+* https://livether.abcode.cc/
+* 仅供演示，不作上线，Mail Driver 为 Log，无法接收邮件
+
 ## 概述
 * PHP框架[ Laravel 5.3](https://laravel.com/docs/5.3)
 * Javascript框架 [Vue.js 2.0](https://vuejs.org/v2/guide/)
